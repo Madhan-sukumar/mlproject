@@ -1,4 +1,8 @@
 numpy
 pandas
 seaborn
--e . #to initialise the setup file
+matplotlib
+scikit-learn
+catboost
+xgboost
+#-e . #to initialise the setup file
