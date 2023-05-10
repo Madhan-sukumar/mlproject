@@ -12,6 +12,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
+
+
 #for defining variables, can use dataclass
 @dataclass
 class DataIngestionConfig:
@@ -60,7 +64,12 @@ class DataIngestion:
 
 
 if __name__=="__main__":
+    #initialising data ingestion
     obj = DataIngestion()
-    obj.initial_data_ingestion()
+    train_data,test_data = obj.initial_data_ingestion()
+
+    #initialising Data Transformation
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
 
             
