@@ -1,12 +1,16 @@
 <html>
+    <head>
+        <title>Gemstone Price Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    
 <body>
     <div class="login">
-       <h1>Student Exam Performance Indicator</h1>
    
        
        <form action="{{ url_for('predict_datapoint')}}" method="post">    <!--to create a value in front end and pass it to app.py-->
         <h1>
-            <legend>Student Exam Performance Prediction</legend>
+            <legend>Student Exam Performance Predictor</legend>
         </h1>
         <div class="mb-3">
             <label class="form-label">Gender</label>
@@ -106,7 +110,7 @@
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}   <!--read from the app.py to show-->
+       The prediction is {{results}}   <!--read from the app.py to show-->
     </h2>
    <body>
 </html>
