@@ -23,9 +23,9 @@
 
 #### STEPS INVOLVED
 
-step 1: create a repository
-step 2: create a folder in local machine to work on.
-step 3: open anaconda prompt and locate to the folder created and type "code ." to create a vs code instance.
+- step 1: create a repository
+- step 2: create a folder in local machine to work on.
+- step 3: open anaconda prompt and locate to the folder created and type "code ." to create a vs code instance.
 step 4: once vs instance opened, open terminal and creat a new environment and activate the new environment using conda activate envname/
 
 SYNCING THE GITHUB:
